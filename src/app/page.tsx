@@ -1,3 +1,5 @@
+import Category from "./components/Category";
+import FeaturesSection from "./components/FeaturesSection";
 import Hero from "./components/Hero";
 
 export default function Home() {
@@ -5,6 +7,8 @@ export default function Home() {
     <>
       <div className="text-primary">
         <Hero />
+        <FeaturesSection />
+        <Category/>
       </div>
     </>
   );

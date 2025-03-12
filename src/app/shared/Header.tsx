@@ -72,7 +72,7 @@ const Header = () => {
 
             {/* Icons */}
             <div className="flex items-center space-x-6 text-gray-800">
-              <div className='flex gap-4 pe-6 border-r border-r-[#303030] '>
+              <div className='flex gap-4 pe-6 border-r  border-[#303030]/25 opacity-[75%]'>
                 <User
                   size={24}
                   weight="light"
@@ -80,7 +80,7 @@ const Header = () => {
                 />
                 SIGN IN
               </div>
-              <div className="relative pe-6 border-r border-r-[#303030]">
+              <div className="relative pe-6 border-r  border-[#303030]/25">
                 {/* <ShoppingCart
                   size={28}
                   weight="light"
