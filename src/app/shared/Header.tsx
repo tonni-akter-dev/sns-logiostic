@@ -5,6 +5,7 @@ import React from 'react'
 import logo from '../../../public/LOGO.png'
 import cart from '../../../public/cart.png'
 import Dropdown from './Dropdown'
+import Link from 'next/link'
 
 const Header = () => {
   return (
@@ -43,11 +44,11 @@ const Header = () => {
           <div className=" flex justify-between items-center py-[38px] pe-[60px]">
             {/* Logo */}
             <div className="absolute top-0 left-0 bg-white max-w-[280px] w-full h-[164px] flex justify-center items-center">
-              <Image
+              <Link href="/"> <Image
                 src={logo}
                 alt="Logo"
                 className=""
-              />
+              /></Link>
             </div>
 
             {/* Navigation Links */}
@@ -58,7 +59,9 @@ const Header = () => {
                   items={["Electronics", "Fashion", "Home & Kitchen"]}
                 />
               </li>
-              <li className="cursor-pointer hover:text-[#C1032F] text-[#303030] font-semibold text-base leading-6">ABOUT US</li>
+              <li className="cursor-pointer hover:text-[#C1032F] text-[#303030] font-semibold text-base leading-6">
+                <Link href='/about'>ABOUT US</Link>
+              </li>
               <li className="cursor-pointer hover:text-[#C1032F] text-[#303030] font-semibold text-base leading-6">BLOG
               </li>
               <li className=" cursor-pointer flex items-center gap-2 font-semibold text-base leading-6">
