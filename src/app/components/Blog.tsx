@@ -50,7 +50,7 @@ const blogData = [
         image: blog1,
     },
     {
-        id: 3,
+        id: 4,
         title: 'How Technology is Transforming the Garment Industry',
         category: 'Technology',
         readTime: '4 min read',
@@ -61,7 +61,7 @@ const blogData = [
         image: blog2,
     },
     {
-        id: 3,
+        id: 5,
         title: 'How Technology is Transforming the Garment Industry',
         category: 'Technology',
         readTime: '4 min read',
@@ -72,7 +72,7 @@ const blogData = [
         image: blog1,
     },
     {
-        id: 3,
+        id: 6,
         title: 'How Technology is Transforming the Garment Industry',
         category: 'Technology',
         readTime: '4 min read',
@@ -83,7 +83,7 @@ const blogData = [
         image: blog2,
     },
     {
-        id: 3,
+        id: 7,
         title: 'How Technology is Transforming the Garment Industry',
         category: 'Technology',
         readTime: '4 min read',
@@ -94,7 +94,7 @@ const blogData = [
         image: blog1,
     },
     {
-        id: 3,
+        id: 8,
         title: 'How Technology is Transforming the Garment Industry',
         category: 'Technology',
         readTime: '4 min read',
