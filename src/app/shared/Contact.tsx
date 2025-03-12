@@ -90,7 +90,6 @@ const Contact = () => {
 
                     <textarea
                         placeholder="Message*"
-                       
                         className="w-full h-[94px] p-3 mb-8 bg-white text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#C1032F]"
                     ></textarea>
 

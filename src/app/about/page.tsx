@@ -4,6 +4,7 @@ import Story from './component/Story'
 import ProductCategory from './component/ProductCategory'
 import Quality from './component/Quality'
 import Contact from '../shared/Contact'
+import Subscribe from '../components/Subscribe'
 
 const About = () => {
     return (
@@ -13,6 +14,7 @@ const About = () => {
             <ProductCategory />
             <Quality />
             <Contact />
+            <Subscribe/>
         </div>
     )
 }
