@@ -1,15 +1,15 @@
 import Category from "./components/Category";
+import Deal from "./components/Deal";
 import FeaturesSection from "./components/FeaturesSection";
 import Hero from "./components/Hero";
 
 export default function Home() {
   return (
     <>
-      <div className="text-primary">
-        <Hero />
-        <FeaturesSection />
-        <Category/>
-      </div>
+      <Hero />
+      <FeaturesSection />
+      <Category />
+      <Deal />
     </>
   );
 }
