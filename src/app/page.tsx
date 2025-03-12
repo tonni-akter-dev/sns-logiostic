@@ -3,6 +3,7 @@ import CorporateClient from "./components/CorporateClient";
 import Deal from "./components/Deal";
 import FeaturesSection from "./components/FeaturesSection";
 import Hero from "./components/Hero";
+import WhyChoosseUs from "./components/WhyChoosseUs";
 
 export default function Home() {
   return (
@@ -12,6 +13,8 @@ export default function Home() {
       <Category />
       <Deal />
       <CorporateClient />
+      <WhyChoosseUs />
+      
     </>
   );
 }

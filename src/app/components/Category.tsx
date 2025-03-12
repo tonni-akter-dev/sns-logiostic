@@ -16,7 +16,6 @@ const category = [
     { id: 5, name: 'Hair items', image: cat5 },
     { id: 6, name: 'Sea food', image: cat6 },
     { id: 7, name: 'Fish (desi)', image: cat7 },
-    { id: 7, name: 'Fish (desi)', image: cat1 },
 ];
 
 const Category = () => {
@@ -26,11 +25,25 @@ const Category = () => {
                 Our Best <span className='text-[#C1032F]'>Category</span>
             </h1>
 
-            <div className={`grid sm:grid-cols-2 lg:grid-cols-4 gap-6 justify-center mx-auto
+            <div className={`flex gap-6 justify-center mx-auto
  
                 ${category.length % 4 !== 0 ? "lg:grid-cols-3" : ""} `}
             >
-                {category.map((cat) => (
+                {category.slice(0, 4).map((cat) => (
+                    <div key={cat.id} className='flex flex-col justify-center items-center mb-[70px]'>
+                        <Image src={cat.image} alt="" />
+                        <h2 className='text-[22px] font-semibold mb-4 mt-6 text-center'>{cat.name}</h2>
+                        <button className='p-[14px] text-white bg-[#C1032F] mt-6 text-base font-semibold hover:bg-transparent hover:text-[#C1032F] border border-[#C1032F] transition-all ease-in-out duration-500'>
+                            View Details
+                        </button>
+                    </div>
+                ))}
+            </div>
+            <div className={`flex gap-6 justify-center mx-auto
+ 
+                ${category.length % 4 !== 0 ? "lg:grid-cols-3" : ""} `}
+            >
+                {category.slice(4, 7).map((cat) => (
                     <div key={cat.id} className='flex flex-col justify-center items-center mb-[70px]'>
                         <Image src={cat.image} alt="" />
                         <h2 className='text-[22px] font-semibold mb-4 mt-6 text-center'>{cat.name}</h2>
