@@ -40,9 +40,7 @@ const Category = () => {
                 ))}
             </div>
             <div className={`flex gap-6 justify-center mx-auto
- 
-                ${category.length % 4 !== 0 ? "lg:grid-cols-3" : ""} `}
-            >
+                ${category.length % 4 !== 0 ? "lg:grid-cols-3" : ""} `}>
                 {category.slice(4, 7).map((cat) => (
                     <div key={cat.id} className='flex flex-col justify-center items-center mb-[70px]'>
                         <Image src={cat.image} alt="" />
