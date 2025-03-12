@@ -2,7 +2,7 @@ import React from 'react'
 
 const Banner = () => {
     return (
-        <div className='ps-[70px]' style={{
+        <div className='lg:ps-[70px] lg:px-0 px-5' style={{
             backgroundImage: `url('/aboutbanner.png')`,
             backgroundSize: "cover",
             backgroundPosition: "center",

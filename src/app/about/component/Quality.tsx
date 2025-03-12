@@ -12,7 +12,7 @@ const Quality = () => {
                 Our Commitment to  <span className='text-[#C1032F]'>Quality</span>
             </h1>
             <p className='text-base  lg:mb-[70px] mb-12 text-[#303030] text-center'>We maintain the highest standards of quality control and compliance with international <br />  regulations across all our product categories.</p>
-            <div className='flex justify-between'>
+            <div className='flex lg:flex-row flex-col lg:gap-0 gap-10 justify-between'>
                 <div className='flex flex-col justify-center items-center'>
                     <Image className='size-[100px] mb-6' src={quality1} alt="" />
                     <h3 className='text-2xl font-medium'>Certified Quality</h3>

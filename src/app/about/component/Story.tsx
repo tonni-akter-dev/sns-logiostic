@@ -14,8 +14,8 @@ const Story = () => {
                 width: "100%",
                 borderRadius: "8px"
             }}>
-                <div className='flex flex-col items-center'>
-                    <p className='max-w-[1042px] w-full mx-auto text-center mb-8 leading-[150%] text-white'><span className='lg:text-4xl text-3xl font-medium'>Sufian & Safina Logistics</span>
+                <div className='flex flex-col items-center lg:px-0 px-5'>
+                    <p className='lg:max-w-[1042px] w-full mx-auto text-center mb-8 leading-[150%] text-white'><span className='lg:text-4xl text-3xl font-medium'>Sufian & Safina Logistics</span>
                         <span className='font-normal  '>has been at the forefront of international trade for over 18 years, specializing in the export and logistics of premium quality products across multiple industries. Our commitment to excellence and customer satisfaction has made us a trusted name in global trade.</span></p>
                     <button className='py-[22px] px-10 text-white bg-[#C1032F] mt-6 text-base font-semibold   border border-[#C1032F] transition-all ease-in-out duration-500'>Read more</button>
                 </div>

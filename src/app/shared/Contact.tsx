@@ -93,7 +93,7 @@ const Contact = () => {
                         className="w-full h-[94px] p-3 mb-8 bg-white text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#C1032F]"
                     ></textarea>
 
-                    <div className='flex justify-between '>
+                    <div className='flex lg:flex-row flex-col lg:gap-0 gap-8  justify-between '>
                         <div className="flex items-center space-x-4">
                             <input type="checkbox" className="h-4 w-4 bg-transparent border rounded" />
                             <p className="text-white  text-base ">I have read and agree to the terms</p>
@@ -101,7 +101,7 @@ const Contact = () => {
 
                         <button
                             type="submit"
-                            className=" py-4 px-[138px] bg-[#C1032F] hover:bg-transparent hover:text-white border border-[#C1032F] text-white  transition-all ease-in-out duration-500"
+                            className=" py-4 lg:px-[138px] bg-[#C1032F] hover:bg-transparent hover:text-white border border-[#C1032F] text-white  transition-all ease-in-out duration-500"
                         >
                             Submit
                         </button>
