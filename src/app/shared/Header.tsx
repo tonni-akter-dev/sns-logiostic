@@ -2,7 +2,7 @@
 import { MagnifyingGlass, Phone, User } from '@phosphor-icons/react'
 import Image from 'next/image'
 import React from 'react'
-import logo from '../../../public/LOGO.png'
+import logo from '../../../public/logo.png'
 import cart from '../../../public/cart.png'
 import Dropdown from './Dropdown'
 import Link from 'next/link'

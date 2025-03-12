@@ -90,8 +90,8 @@ const Contact = () => {
 
                     <textarea
                         placeholder="Message*"
-                        rows="4"
-                        className="w-full p-3 mb-8 bg-white text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#C1032F]"
+                       
+                        className="w-full h-[94px] p-3 mb-8 bg-white text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#C1032F]"
                     ></textarea>
 
                     <div className='flex justify-between '>
