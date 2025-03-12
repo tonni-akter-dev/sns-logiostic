@@ -3,6 +3,9 @@ import logo from '../../../public/logo.png'
 import location from '../../../public/location.png'
 import phone from '../../../public/phone.png'
 import email from '../../../public/email.png'
+import facebook from '../../../public/facebook.png'
+import twitter from '../../../public/twitter.png'
+import instagram from '../../../public/instagram.png'
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -16,10 +19,16 @@ const Footer = () => {
           <p className="text-base  mb-3.5 leading-[150%] text-justify">
             The Most Eminent Marine parts and service provider in major metros and overseas with reliability since 1994. We are committed to provide reliable client support.
           </p>
-          <div className="flex space-x-4">
-            <a href="#" className="bg-[#D32F2F] text-white rounded-full p-2"><i className="fab fa-facebook-f"></i></a>
-            <a href="#" className="bg-[#D32F2F] text-white rounded-full p-2"><i className="fab fa-twitter"></i></a>
-            <a href="#" className="bg-[#D32F2F] text-white rounded-full p-2"><i className="fab fa-pinterest-p"></i></a>
+          <div className="flex space-x-3">
+            <a href="#">
+              <Image src={facebook} alt="" />
+            </a>
+            <a href="#">
+              <Image src={twitter} alt="" />
+            </a>
+            <a href="#">
+              <Image src={instagram} alt="" />
+            </a>
           </div>
         </div>
 
