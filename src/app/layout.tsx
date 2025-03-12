@@ -6,10 +6,9 @@ import Footer from "./shared/Footer";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800"], // Adjust as needed
-  variable: "--font-montserrat", // Custom CSS variable
+  weight: ["300", "400", "500", "600", "700", "800"],
+  variable: "--font-montserrat",
 });
-
 
 export const metadata: Metadata = {
   title: "Create Next App",

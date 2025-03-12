@@ -58,7 +58,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-
       {/* Copyright */}
       <div className="text-center mt-8 py-[7px] bg-[#C1032F] text-white text-xs leading-[150%]">
         <p>@Copyright 2025/ Safina Marine Group All Right Reserved Design & Development By Creativehubit </p>
