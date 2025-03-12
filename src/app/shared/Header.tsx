@@ -12,7 +12,7 @@ const Header = () => {
       <header className="w-full relative">
         {/* Top Bar */}
         <div className="bg-[#303030] text-white text-sm py-5">
-          <div className="container mx-auto flex justify-end items-center px-4">
+          <div className="flex justify-end items-center px-4">
             <p className='text-sm border-r border-r-white pe-3 '>Track Your Order</p>
             <div className="flex items-center space-x-4">
               {/* Currency Selector */}
@@ -40,7 +40,7 @@ const Header = () => {
 
         {/* Main Navbar */}
         <nav className="">
-          <div className="container mx-auto flex justify-between items-center py-[38px] pe-[60px]">
+          <div className=" flex justify-between items-center py-[38px] pe-[60px]">
             {/* Logo */}
             <div className="absolute top-0 left-0 bg-white max-w-[280px] w-full h-[164px] flex justify-center items-center">
               <Image

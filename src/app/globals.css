@@ -6,3 +6,14 @@ body {
     font-family: "Montserrat", sans-serif;
     background-color: white;
 }
+
+
+.swiper-pagination-bullet-active {
+    background: white !important;
+}
+
+.swiper-pagination-bullet {
+    background: #919194 !important;
+    height: 16px !important;
+    width: 16px !important;
+}
