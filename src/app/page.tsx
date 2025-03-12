@@ -17,7 +17,7 @@ export default function Home() {
       <CorporateClient />
       <WhyChoosseUs />
       <Blog />
-     <Subscribe/>
+      <Subscribe />
     </>
   );
 }

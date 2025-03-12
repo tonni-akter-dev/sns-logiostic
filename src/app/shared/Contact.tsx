@@ -6,10 +6,10 @@ import Image from "next/image";
 
 const Contact = () => {
     return (
-        <div className="flex flex-col md:flex-row items-center gap-[107px]   px-[60px] mb-[100px]">
+        <div className="flex flex-col md:flex-row items-center gap-[107px]   lg:px-[60px] px-4 mb-[100px]">
             {/* Left Section - Contact Info */}
             <div className="flex-shrink-0">
-                <h2 className="text-4xl font-semibold text-[#303030] mb-1">Contact Us</h2>
+                <h2 className="lg:text-4xl text-3xl font-semibold text-[#303030] mb-1">Contact Us</h2>
                 <p className="text-[#303030] mb-4">
                     Get in touch with our team for inquiries about our <br /> products and
                     services.

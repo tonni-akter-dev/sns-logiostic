@@ -7,11 +7,11 @@ import Image from 'next/image'
 
 const Quality = () => {
     return (
-        <div className='py-[60px] px-[60px] mb-[100px]' style={{ boxShadow: '0px 0px 23.1px 0px #30303012' }}>
-            <h1 className='text-4xl font-bold  text-center mb-2'>
+        <div className='py-[60px] lg:px-[60px] px-4 mb-[100px]' style={{ boxShadow: '0px 0px 23.1px 0px #30303012' }}>
+            <h1 className='lg:text-4xl text-3xl font-bold  text-center mb-2'>
                 Our Commitment to  <span className='text-[#C1032F]'>Quality</span>
             </h1>
-            <p className='text-base  mb-[70px] text-[#303030] text-center'>We maintain the highest standards of quality control and compliance with international <br />  regulations across all our product categories.</p>
+            <p className='text-base  lg:mb-[70px] mb-12 text-[#303030] text-center'>We maintain the highest standards of quality control and compliance with international <br />  regulations across all our product categories.</p>
             <div className='flex justify-between'>
                 <div className='flex flex-col justify-center items-center'>
                     <Image className='size-[100px] mb-6' src={quality1} alt="" />

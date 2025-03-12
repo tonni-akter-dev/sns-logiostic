@@ -45,11 +45,11 @@ const features = [
 
 export default function WhyChoosseUs() {
     return (
-        <div className="px-[60px] mb-[100px]">
-            <h2 className="text-4xl font-bold text-center  w-full mb-[80px]">
-                Why Choose Us   <span className="text-[#C1032F]">Sns logiostic</span>
+        <div className="lg:px-[60px] px-4 mb-[100px]">
+            <h2 className="lg:text-4xl text-3xl font-bold text-center  w-full mb-[80px]">
+                Why Choose Us <br className="lg:hidden block" />  <span className="text-[#C1032F]">Sns logiostic</span>
             </h2>
-            <div className="flex gap-x-[86px] gap-y-[70px]">
+            <div className="flex lg:flex-row flex-col gap-x-[86px] gap-y-[70px]">
                 {features.slice(0,3).map((feature) => (
                     <div key={feature.id} className="flex gap-5  items-center">
                         <Image src={feature.icon} alt={feature.title} className=" mb-4 size-20 object-cover" />
@@ -60,7 +60,7 @@ export default function WhyChoosseUs() {
                     </div>
                 ))}
             </div>
-            <div className="flex max-w-[813px] mx-auto mt-[70px] items-center gap-x-[86px] gap-y-[70px]">
+            <div className="flex lg:flex-row flex-col max-w-[813px] mx-auto mt-[70px] items-center gap-x-[86px] gap-y-[70px]">
                 {features.slice(3,5).map((feature) => (
                     <div key={feature.id} className="flex gap-5  items-center">
                         <Image src={feature.icon} alt={feature.title} className=" mb-4 size-20 object-cover" />

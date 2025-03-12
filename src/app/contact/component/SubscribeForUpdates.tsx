@@ -10,8 +10,8 @@ const SubscribeForUpdates = () => {
                 height: "538px",
                 width: "100%",
             }}>
-                <div className="mb-20 ">
-                    <h2 className="text-4xl  font-bold mb-10  border-t text-center border-[#303030]/20">Subscribe for More Updates</h2>
+                <div className="lg:mb-20 mb-8 ">
+                    <h2 className="lg:text-4xl text-3xl  font-bold mb-10  border-t text-center border-[#303030]/20">Subscribe for More Updates</h2>
                     <div className="flex gap-4 justify-center items-center w-full">
                         <input
                             type="email"

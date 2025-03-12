@@ -20,17 +20,17 @@ const category = [
 
 const Category = () => {
     return (
-        <div className='px-[60px]'>
-            <h1 className='text-[40px] font-bold mb-20 text-center'>
+        <div className='lg:px-[60px] px-4 '>
+            <h1 className='lg:text-[40px] text-3xl font-bold lg:mb-20 mb-8 text-center'>
                 Our Best <span className='text-[#C1032F]'>Category</span>
             </h1>
 
-            <div className={`flex gap-6 justify-center mx-auto
+            <div className={`flex lg:flex-row flex-col gap-6 justify-center mx-auto
  
                 ${category.length % 4 !== 0 ? "lg:grid-cols-3" : ""} `}
             >
                 {category.slice(0, 4).map((cat) => (
-                    <div key={cat.id} className='flex flex-col justify-center items-center mb-[70px]'>
+                    <div key={cat.id} className='flex flex-col justify-center items-center lg:mb-[70px] mb-12'>
                         <Image src={cat.image} alt="" />
                         <h2 className='text-[22px] font-semibold mb-4 mt-6 text-center'>{cat.name}</h2>
                         <button className='p-[14px] text-white bg-[#C1032F] mt-6 text-base font-semibold hover:bg-transparent hover:text-[#C1032F] border border-[#C1032F] transition-all ease-in-out duration-500'>
@@ -39,10 +39,10 @@ const Category = () => {
                     </div>
                 ))}
             </div>
-            <div className={`flex gap-6 justify-center mx-auto
+            <div className={`flex  lg:flex-row flex-col gap-6 justify-center mx-auto
                 ${category.length % 4 !== 0 ? "lg:grid-cols-3" : ""} `}>
                 {category.slice(4, 7).map((cat) => (
-                    <div key={cat.id} className='flex flex-col justify-center items-center mb-[70px]'>
+                    <div key={cat.id} className='flex flex-col justify-center items-center lg:mb-[70px] mb-12'>
                         <Image src={cat.image} alt="" />
                         <h2 className='text-[22px] font-semibold mb-4 mt-6 text-center'>{cat.name}</h2>
                         <button className='p-[14px] text-white bg-[#C1032F] mt-6 text-base font-semibold hover:bg-transparent hover:text-[#C1032F] border border-[#C1032F] transition-all ease-in-out duration-500'>

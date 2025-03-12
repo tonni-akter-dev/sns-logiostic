@@ -15,8 +15,8 @@ const category = [
 const ProductCategory = () => {
     return (
         <div className='mb-[100px]'>
-            <div className='px-[60px]'>
-                <h1 className='text-[40px] font-bold mb-[70px] text-center'>
+            <div className='lg:px-[60px] px-4'>
+                <h1 className='lg:text-[40px] text-3xl font-bold lg:mb-[70px] mb-12 text-center'>
                     Our Product  <span className='text-[#C1032F]'>Categories</span>
                 </h1>
                 <div className={`flex gap-6 justify-center mx-auto

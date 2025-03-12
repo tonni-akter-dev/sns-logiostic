@@ -7,6 +7,7 @@ import profile from '../../../public/profile.png';
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from "swiper/modules";
 
 // Import Swiper styles
 import 'swiper/css';
@@ -107,8 +108,8 @@ const blogData = [
 
 const Blog = () => {
     return (
-        <div className="ps-[60px] mb-[60px]">
-            <h1 className='text-[40px] font-bold mb-20 text-center'>
+        <div className="lg:ps-[60px] lg:px-0 px-4 mb-[60px]">
+            <h1 className='lg:text-[40px] text-3xl font-bold lg:mb-20 mb-8 text-center'>
                 Sns logiostic  <span className='text-[#C1032F]'>Blog</span>
             </h1>
             <Swiper
@@ -116,37 +117,18 @@ const Blog = () => {
                 spaceBetween={24}
                 className="mySwiper"
                 centeredSlides={true}
-                loop>
+                loop
+                autoplay={{ delay: 3000, disableOnInteraction: false }}
+                modules={[Autoplay]}
+                breakpoints={{
+                    320: { slidesPerView: 1, spaceBetween: 10 }, // Mobile screens
+                    640: { slidesPerView: 1, spaceBetween: 16 }, // Small devices (phones)
+                    768: { slidesPerView: 2, spaceBetween: 20 }, // Tablets
+                    1024: { slidesPerView: 3, spaceBetween: 24 }, // Laptops & desktops
+                  }}
+            >
                 {blogData.map((blog) => (
                     <SwiperSlide key={blog.id} className='pb-10'>
-                        {/* <div
-                            className="bg-white rounded-xl overflow-hidden shadow-md box"
-                            style={{ boxShadow: '0px 0px 4px 0.5px #00000040' }}
-                        >
-                            <Image src={blog.image} alt={blog.title} className="w-full h-auto" />
-                            <div className="pt-6 px-5 pb-5">
-                                <div className="flex items-center gap-5 text-sm mb-3">
-                                    <span className="bg-[#C1032F] text-white px-3 py-1 rounded-full text-xs">
-                                        {blog.category}
-                                    </span>
-                                    <span className="text-[#303030] text-xs">{blog.readTime}</span>
-                                </div>
-                                <h3 className="text-xl font-medium text-gray-900 mb-3">{blog.title}</h3>
-                                <p className="leading-[150%] text-sm">{blog.description}</p>
-                                <div className="flex items-center justify-between mt-5">
-                                    <div className="flex items-center gap-4">
-                                        <Image src={profile} alt="Author" className="w-12 h-12 rounded-full" />
-                                        <div>
-                                            <p className="text-base">{blog.author}</p>
-                                            <p className="text-base">{blog.date}</p>
-                                        </div>
-                                    </div>
-                                    <button className="bg-[#C1032F] text-white text-xs px-5 py-2 rounded-[30px] transition-all ease-in-out hover:bg-transparent border border-[#C1032F] hover:text-[#C1032F]">
-                                        Read more
-                                    </button>
-                                </div>
-                            </div>
-                        </div> */}
                         <div
                             className="bg-white rounded-lg overflow-hidden shadow-md box relative border-effect"
                             style={{ boxShadow: '0px 0px 4px 0.5px #00000040' }}

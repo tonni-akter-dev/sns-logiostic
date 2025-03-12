@@ -2,9 +2,9 @@ import React from 'react'
 
 const Subscribe = () => {
     return (
-        <div className="mb-20 ">
-            <h2 className="text-4xl  font-bold mb-10  pt-20 border-t text-center border-[#303030]/20">Subscribe for More Updates</h2>
-            <div className="flex gap-4 justify-center items-center">
+        <div className="mb-20 lg:px-0 px-4">
+            <h2 className="lg:text-4xl text-3xl  font-bold mb-10  pt-20 border-t text-center border-[#303030]/20">Subscribe for More Updates</h2>
+            <div className="flex lg:flex-row flex-col gap-4 justify-center items-center">
                 <input
                     type="email"
                     placeholder="Enter your email address..."

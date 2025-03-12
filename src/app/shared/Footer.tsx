@@ -12,9 +12,9 @@ import Link from 'next/link';
 const Footer = () => {
   return (
     <footer className=" ">
-      <div className="flex gap-[72px] px-[60px]">
+      <div className="flex lg:flex-row flex-col lg:items-start items-center lg:text-start text-center gap-[72px] lg:px-[60px] px-4">
         {/* Logo and Description */}
-        <div className="flex flex-col items-start max-w-[243px] w-full">
+        <div className="flex flex-col lg:items-start items-center max-w-[243px] w-full">
           <Image src={logo} alt="Logo" className="size-[84px] mb-2.5" /> {/* Replace with your logo path */}
           <p className="text-base  mb-3.5 leading-[150%] text-justify">
             The Most Eminent Marine parts and service provider in major metros and overseas with reliability since 1994. We are committed to provide reliable client support.
@@ -57,11 +57,11 @@ const Footer = () => {
         </div>
 
         {/* Contact Us */}
-        <div className="bg-[#303030] text-white pt-10 px-12 rounded-md">
+        <div className="bg-[#303030] text-white py-10 px-12 rounded-md">
           <h3 className="font-bold text-2xl mb-5">Contact Us</h3>
           <div className="space-y-3">
             <p className='flex gap-5 items-start text-base leading-6'><Image className='mt-1 size-5' src={location} alt="" />
-              <span> 44/A, 1st Floor, Faisal House, Road No:-01, South Khulshi, Chittagong, Bangladesh. 4202.</span></p>
+              <span className='text-start'> 44/A, 1st Floor, Faisal House, Road No:-01, South Khulshi, Chittagong, Bangladesh. 4202.</span></p>
             <p className='flex gap-5 items-start text-base leading-6 underline'><Image className='mt-1 size-5 ' src={phone} alt="" /> <span>+880 132929 9667</span></p>
             <Link href='info@ssmsbd.com' className='flex gap-5 items-start text-base leading-6 underline'><Image className='mt-1 w-[17px]' src={email} alt="" /> <span>info@ssmsbd.com</span></Link>
           </div>

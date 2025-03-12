@@ -84,20 +84,20 @@ const Hero = () => {
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
-            <div className="w-full h-[568px] relative flex items-center justify-center text-white">
+            <div className="w-full h-[568px] relative flex items-center justify-center text-white lg:px-0 px-4">
               <Image
                 src={slide.image}
                 alt="Hero Image"
                 layout="fill"
                 objectFit="cover"
-                priority={index === 0} // Ensures the first image loads properly
+                priority={index === 0} 
               />
               <div className="absolute inset-0 "></div>
               <div className="relative z-10 text-center">
                 <p className='text-[32px] font-semibold'>Sns logiostic</p>
-                <h1 className="text-[70px] font-medium leading-[80px] my-[14px]" dangerouslySetInnerHTML={{ __html: slide.title }}></h1>
-                <p className="text-2xl     mt-2">Discover the best Product apparel, accessories, and equipment here.</p>
-                <button className='py-[22px] px-10 bg-[#C1032F] mt-6 text-base font-semibold hover:bg-transparent hover:text-[#C1032F] border border-[#C1032F] transition-all ease-in-out duration-500'>SHOP NOW</button>
+                <h1 className="lg:text-[70px] text-2xl font-medium lg:leading-[80px] my-[14px]" dangerouslySetInnerHTML={{ __html: slide.title }}></h1>
+                <p className="lg:text-2xl text-sm  mt-2">Discover the best Product apparel, accessories, and equipment here.</p>
+                <button className='lg:py-[22px] py-3 px-10 bg-[#C1032F] mt-6 text-base font-semibold hover:bg-transparent hover:text-[#C1032F] border border-[#C1032F] transition-all ease-in-out duration-500'>SHOP NOW</button>
               </div>
             </div>
           </SwiperSlide>

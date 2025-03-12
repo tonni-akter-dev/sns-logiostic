@@ -1,20 +1,24 @@
 'use client'
-import { MagnifyingGlass, Phone, User } from '@phosphor-icons/react'
+import { List, MagnifyingGlass, Phone, User, X } from '@phosphor-icons/react'
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 import logo from '../../../public/logo.png'
 import cart from '../../../public/cart.png'
 import Dropdown from './Dropdown'
 import Link from 'next/link'
 
 const Header = () => {
+
+  const [menuOpen, setMenuOpen] = useState(false);
+
+
   return (
     <div>
       <header className="w-full relative">
         {/* Top Bar */}
         <div className="bg-[#303030] text-white text-sm py-5">
           <div className="flex justify-end items-center px-4">
-            <p className='text-sm border-r border-r-white pe-3 '>Track Your Order</p>
+            <p className='lg:block hidden text-sm border-r border-r-white pe-3 '>Track Your Order</p>
             <div className="flex items-center space-x-4">
               {/* Currency Selector */}
               <div className='border-r border-r-white px-3 text-sm '>
@@ -43,7 +47,7 @@ const Header = () => {
         <nav className="">
           <div className=" flex justify-between items-center py-[38px] pe-[60px]">
             {/* Logo */}
-            <div className="absolute top-0 left-0 bg-white max-w-[280px] w-full h-[164px] flex justify-center items-center">
+            <div className="absolute lg:flex hidden top-0 left-0 bg-white max-w-[280px] w-full h-[164px]  justify-center items-center">
               <Link href="/"> <Image
                 src={logo}
                 alt="Logo"
@@ -52,7 +56,7 @@ const Header = () => {
             </div>
 
             {/* Navigation Links */}
-            <ul className="flex items-center space-x-8 text-gray-800 font-semibold ps-[300px]">
+            <ul className="lg:flex hidden items-center space-x-8 text-[#303030] font-semibold lg:ps-[300px]">
               <li className=" cursor-pointer flex items-center gap-2 font-semibold text-base leading-6">
                 <Dropdown
                   title="BROWSE CATEGORIES"
@@ -72,9 +76,35 @@ const Header = () => {
               </li>              <li className="cursor-pointer hover:text-[#C1032F] text-[#303030] font-semibold text-base leading-6">BRAND</li>
               <li className="cursor-pointer hover:text-[#C1032F] text-[#303030] font-semibold text-base leading-6">CONTACT US</li>
             </ul>
-
+            <button
+              className="lg:hidden text-[#303030] focus:outline-none px-4"
+              onClick={() => setMenuOpen(!menuOpen)}
+            >
+              {menuOpen ? <X size={28} /> : <List size={28} />}
+            </button>
+            {menuOpen && <ul className="lg:hidden absolute bg-white top-40 z-50 flex flex-col items-center space-y-8  p-10  font-semibold lg:ps-[300px]">
+              <li className=" cursor-pointer flex items-center gap-2 font-semibold text-base leading-6">
+                <Dropdown
+                  title="BROWSE CATEGORIES"
+                  items={["Electronics", "Fashion", "Home & Kitchen"]}
+                />
+              </li>
+              <li className="cursor-pointer hover:text-[#C1032F] text-[#303030] font-semibold text-base leading-6">
+                <Link href='/about'>ABOUT US</Link>
+              </li>
+              <li className="cursor-pointer hover:text-[#C1032F] text-[#303030] font-semibold text-base leading-6">BLOG
+              </li>
+              <li className=" cursor-pointer flex items-center gap-2 font-semibold text-base leading-6">
+                <Dropdown
+                  title="PAGE"
+                  items={["Electronics", "Fashion", "Home & Kitchen"]}
+                />
+              </li>
+              <li className="cursor-pointer hover:text-[#C1032F] text-[#303030] font-semibold text-base leading-6">BRAND</li>
+              <li className="cursor-pointer hover:text-[#C1032F] text-[#303030] font-semibold text-base leading-6">CONTACT US</li>
+            </ul>}
             {/* Icons */}
-            <div className="flex items-center space-x-6 text-gray-800">
+            <div className="flex items-center space-x-6 text-[#303030]">
               <div className='flex gap-4 pe-6 border-r  border-[#303030]/25 opacity-[75%]'>
                 <User
                   size={24}

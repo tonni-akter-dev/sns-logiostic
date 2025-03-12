@@ -8,10 +8,10 @@ import Link from 'next/link'
 
 const Deal = () => {
     return (
-        <div className='px-[60px] mb-[100px]'>
+        <div className='lg:px-[60px] px-4 mb-[100px]'>
             <div>
                 {/* Title */}
-                <h2 className="text-[40px] font-bold  border-b border-[#303030]/20 pb-[28px] max-w-[1007px] w-full mb-[64px]">
+                <h2 className="lg:text-[40px] text-3xl font-bold  border-b border-[#303030]/20 pb-[28px] max-w-[1007px] w-full mb-[64px]">
                     Deal of The <span className="text-[#C1032F]">Day</span>
                 </h2>
 
@@ -34,14 +34,14 @@ const Deal = () => {
                     {/* Deal Info */}
                     <div className=" flex flex-col  text-[#303030]">
                         <p className="text-[22px] font-semibold  mb-2" >garments</p>
-                        <h3 className="text-4xl font-bold mb-[80px]">wear <span className="font-extrabold">Max90</span></h3>
+                        <h3 className="lg:text-4xl text-3xl font-bold mb-[80px]">wear <span className="font-extrabold">Max90</span></h3>
 
                         {/* Countdown Timer */}
                         <p className="text-base mb-4">Sale ends in:</p>
                         <div className="flex space-x-4 mb-[64px]">
                             {["02", "15", "46", "17"].map((time, index) => (
                                 <div key={index} className="text-center">
-                                    <span className="block text-[36px] text-[#C1032F] mb-4 font-bold border border-[#303030]/25  p-6 ">{time}</span>
+                                    <span className="block lg:text-[36px] text-2xl text-[#C1032F] mb-4 font-bold border border-[#303030]/25  p-6 ">{time}</span>
                                     <span className="text-base text-[#303030] opacity-50">{["DAYS", "HOURS", "MINS", "SECS"][index]}</span>
                                 </div>
                             ))}
@@ -63,7 +63,7 @@ const Deal = () => {
                         <div className='absolute top-7 left-8'>
                             <div className=" text-base text-[#C1032F] font-semibold mb-4">PROMO</div>
                             <div className=" flex flex-col justify-end   text-white">
-                                <h3 className="text-4xl text-[#303030] mb-5 font-bold">BLACK FRIDAY DISCOUNT!</h3>
+                                <h3 className="lg:text-4xl text-3xl text-[#303030] mb-5 font-bold">BLACK FRIDAY DISCOUNT!</h3>
                                 <p className="text-base text-[#303030] mb-12">Get 15% Off on Running <span className='font-bold'> Leather items</span></p>
                                 <a href="#" className="text-[#303030] mt-2 text-2xl flex gap-4 items-center font-bold">Shop Now 
                                     <Image src={arrow} alt="" />

@@ -10,7 +10,7 @@ const Banner = () => {
             width: "100%",
         }}>
             <div className='pt-[95px]'>
-                <h1 className='text-[50px]  font-semibold mb-1.5'>ABOUT US </h1>
+                <h1 className='lg:text-[50px] text-[30px]  font-semibold mb-1.5'>ABOUT US </h1>
                 <p className='text-xl font-medium'>Your trusted partner in global trade and logistics <br /> solutions since 2005</p>
                 <button className='py-[22px] px-10 bg-[#C1032F] mt-6 text-base font-semibold hover:bg-transparent text-white hover:text-[#C1032F] border border-[#C1032F] transition-all ease-in-out duration-500'>Discover more</button>
 

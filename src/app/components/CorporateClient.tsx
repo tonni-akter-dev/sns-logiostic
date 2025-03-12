@@ -14,12 +14,12 @@ import Image from 'next/image'
 
 const CorporateClient = () => {
     return (
-        <div className='px-[60px] mb-[100px]'>
-            <h2 className="text-4xl font-bold text-center  w-full mb-[80px]">
+        <div className='lg:px-[60px] px-4 mb-[100px]'>
+            <h2 className="lg:text-4xl  text-3xl font-bold text-center  w-full mb-[80px]">
                 Our Corporate  <span className="text-[#C1032F]">Client</span>
             </h2>
             <Marquee loop={0}>
-                <div className='flex items-center gap-[70px] mb-[60px]'>
+                <div className='flex items-center lg:gap-[70px] gap-6  mb-[60px]'>
                     <Image className='h-full' src={client1} alt="" />
                     <Image className='h-full' src={client2} alt="" />
                     <Image className='h-full' src={client3} alt="" />
@@ -29,7 +29,7 @@ const CorporateClient = () => {
             </Marquee>
             <div className='max-w-[550px] mx-auto'>
                 <Marquee loop={0} direction='right'>
-                    <div className='flex items-center gap-[70px]'>
+                    <div className='flex items-center lg:gap-[70px] gap-6 '>
                         <Image className='h-full' src={client6} alt="" />
                         <Image className='h-full' src={client7} alt="" />
                         <Image className='h-full mr-[70px]' src={client8} alt="" />
